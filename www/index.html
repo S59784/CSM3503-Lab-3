@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
    <head>
-      <title>Task 2 Lab 3</title>
+      <title>Bootstrap Example</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="css/bootstrap.min.css">
 
       <!-- Custom styles for this template -->
       <link href="css/navbar-fixed-top.css" rel="stylesheet">
+      <style>
+         .line{
+            column-gap: 40px;
+            display: flex;
+            flex-direction: row;
+         }
+      </style>
    </head>
    <body>
       <!-- Fixed navbar -->
@@ -20,7 +27,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                </button>
-               <a class="navbar-brand" href="#">My Table</a>
+               <a class="navbar-brand" href="#">Project name</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                <ul class="nav navbar-nav">
@@ -38,101 +45,84 @@
          </div>
       </nav>
 
-      <div class="container">
-        <table class="table table-hover table-striped">
-            <thead style="background-color: rgb(108, 123, 224); color: white;">
-              <tr>
-                <th scope="col">Class name</th>
-                <th scope="col">Type</th>
-                <th scope="col">Hours</th>
-                <th scope="col">Trainer</th></th>
-                <th scope="col">Spots</th></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Like a butterfly</td>
-                <td>Boxing</td>
-                <td>9:00 AM - 11:00 AM</td>
-                <td>Aaron Chapman</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Mind & Body</td>
-                <td>Yoga</td>
-                <td>8:00 AM - 9:00 AM</td>
-                <td>Adam Stewart</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Crit Cardio</td>
-                <td>Gym</td>
-                <td>9:00 AM - 10:00 AM</td>
-                <td>Aaron Chapman</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Wheel Pose Full Posture</td>
-                <td>Yoga</td>
-                <td>7:00 AM - 8:30 AM</td>
-                <td>Donna Wilson</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Playful Dancer's Flow</td>
-                <td>Yoga</td>
-                <td>8:00 AM - 9:00 AM</td>
-                <td>Donna Wilson</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Zumba Dance</td>
-                <td>Dance</td>
-                <td>5:00 PM - 7:00 PM</td>
-                <td>Donna Wilson</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Cardio Blast</td>
-                <td>Gym</td>
-                <td>5:00 PM - 7:00 PM</td>
-                <td>Randy Porter</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Pilates Reformer</td>
-                <td>Gym</td>
-                <td>8:00 AM - 9:00 AM</td>
-                <td>Randy Porter</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <td>Supple Spine and Shoulders</td>
-                <td>Yoga</td>
-                <td>6:30 AM - 8:00 AM</td>
-                <td>Randy Porter</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>Yoga for Divas</td>
-                <td>Yoga</td>
-                <td>9:00 AM - 11:00 AM</td>
-                <td>Donna Wilson</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <td>Virtual Cycle</td>
-                <td>Gym</td>
-                <td>8:00 AM - 9:00 AM</td>
-                <td>Randy Porter</td>
-                <td>20</td>
-              </tr>
-            </tbody>
-          </table>
+
+   <div class="container">
+   <h1>Person Form</h1>
+
+   <div class="alert alert-danger alert-dismissible fade in">
+      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+      <strong>Error Message.</strong>
     </div>
 
-         
+   
+   <form action="" style="width: 100%;" class="container">
+      <div class="line" >
+       <p style="width: 33%;">Title</p>
+   
+       <p style="width: 33%;">First Name</p>
+       <p style="width: 33%;">Last Name</p>
+      </div>
 
+      <div class="line" >
+       <input type="text" placeholder="Mr." class="form-control col-sm-4"/>
+   
+       <input type="text" placeholder="Azim" class="form-control col-sm-4"/>
+       <input type="text" placeholder="Harun" class="form-control col-sm-4"/>
+   
+      </div>
+      <br>
+      <div class="line" >
+         <p style="width: 50%;">Gender</p>
+         <p style="width: 50%;">Date of Birth</p>
+      </div>
+
+      <div class="line" >
+         <select class="form-control col-sm-6">
+            <option></option>
+            <option>Male</option>
+            <option>Female</option>
+         </select>
+
+         <input type="text" placeholder="dd/mm/yyyy" class="form-control col-sm-6">
+      </div>
+      <br>
+      <div class="line" >
+         <p>Address</p>
+      </div>
+
+      <div class="line" >
+         <input type="text" placeholder="Street" class="form-cotrol col-sm-12">
+      </div>
+      <br>
+      <div class="line" >
+         <input type="text" placeholder="City" class="form-control col-sm-6">
+
+         <input type="text" placeholder="State" class="form-control col-sm-6">
+      </div>
+      <br>
+      <div class="line" >
+         <input type="text" placeholder="Post Code" class="form-control col-sm-6">
+
+         <select class="form-control col-sm-6">
+            <option>Country</option>
+            <option>Indonesia</option>
+            <option>Thailand</option>
+            <option>Brunei</option>
+            <option>Timor Leste</option>
+            <option>Phillipines</option>
+            <option>Vietnam</option>
+            <option>Myanmar</option>
+            <option>Malaysia</option>
+         </select>
+      </div>
+      <br>
+      <div style="text-align: right;">
+         <button style="width: 20%;" type="button" class="btn btn-primary">Register</button>
+      </div>
+</form> 
+</div> 
+ 
+        
       <script src="js/jquery-3.2.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
    </body>
